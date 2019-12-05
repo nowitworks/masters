@@ -1,0 +1,8 @@
+node_modules/
+
+cred/files/mcl*
+cred/files/pscreds.js
+cred/files/linking.js
+cred/files/js-client/
+
+issuer/keys.json

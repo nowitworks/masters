@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <title>Questionnaire 3</title>
+</head>
+<body>
+
+    <h1>Questionnaire 3</h1>
+    <div id="results"></div>
+    <form id="questions-form">
+        <p><b>Question 1. What is the answer?</b></p>
+        <div class="radio">
+          <label><input type="radio" name="optradio1" value="Alice" checked> Alice</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio1" value="Bob"> Bob</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio1" value="Carlos"> Carlos</label>
+        </div>
+
+        <br/>
+
+        <p><b>Question 2. What is the answer?</b></p>
+        <div class="radio">
+          <label> <input type="radio" name="optradio2" value="Alice" checked> Alice</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio2" value="Bob"> Bob</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio2" value="Carlos"> Carlos</label>
+        </div>
+
+        <button type="submit" class="button">Submit Answers!</button>
+    </form>
+
+    <br/>
+
+    <h2>Studies</h2>
+    I give permission for this answer to participate in the following studies:
+    <br/>
+    <form id="researchers-form">
+        <div class="checkbox">
+          <label><input type="checkbox" name="studies" value="study1"> <b>Study 1</b>: link questionnaires 1, 2 and 3</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="studies" value="study2"> <b>Study 2</b>: link questionnaires 2 and 3</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="studies" value="study3"> <b>Study 3</b>: link questionnaires 1 and 3</label>
+        </div>
+    </form>
+
+    <a href="http://127.0.0.1:3002/list/Questionnaire3">Answers<a/>
+
+    <script src="http://127.0.0.1:3500/helper.js"></script>
+    <script>
+
+        // Questionnaire ID
+        const FORM_ID = "questions-form";
+        const RE_FORM_ID = "researchers-form";
+        const QUEST_ID = "Questionnaire3";
+
+        // Handle form submission
+        const form = document.getElementById(FORM_ID);
+        form.addEventListener("submit", handleFormSubmit(FORM_ID, RE_FORM_ID, QUEST_ID)); //TODO: create ID automatically
+
+    </script>
+</body>
+</html>

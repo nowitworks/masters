@@ -1,0 +1,22 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>IP</th>
+            <th>Link Tag</th>
+            <th>Pseudonym</th>
+            <th>Question 1</th>
+            <th>Question 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each answers}}
+        <tr>
+            <td>{{ip}}</td>
+            <td>{{linkTag}}</td>
+            <td>{{nymStr}}</td>
+            <td>{{ans1}}</td>
+            <td>{{ans2}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

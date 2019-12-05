@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Mock Credentials Window</title>
+    <style>
+        body {
+            background-color: #D53C2F;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>I'm the page with the user's credentials but I'm going to delete everything in localStorage now</h1>
+    
+    <script>
+        Object.keys(localStorage).forEach((el) => {
+            localStorage.removeItem(el);
+        });
+    </script>
+</body>
+</html>
