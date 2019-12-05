@@ -1,0 +1,14 @@
+{
+    "files": [
+        "src/mcl.d.ts",
+        "src/linking.ts",
+        "src/doStuff.ts",
+        "src/index.ts"
+    ],
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "declaration": true,
+        "target": "es5",
+        "lib": [ "es2015", "dom" ]
+    }
+}

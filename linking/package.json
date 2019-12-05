@@ -1,0 +1,35 @@
+{
+  "name": "linking",
+  "version": "1.0.0",
+  "description": "Typescript implementation of a system for selectively linkable questionnaires",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register src/**/*.spec.ts",
+    "report": "mocha -slow 1 -r ts-node/register src/report-tests/*.spec.ts"
+  },
+  "author": "Joao Silveira",
+  "license": "ISC",
+  "repository": "https://github.com/spring-epfl/spring19-JoaoSilveira/tree/master/linking",
+  "devDependencies": {
+    "@types/chai": "^4.2.6",
+    "@types/mocha": "^5.2.6",
+    "browserify": "^16.5.0",
+    "chai": "^4.2.0",
+    "gulp": "^4.0.1",
+    "gulp-rm-lines": "0.0.9",
+    "gulp-tslint": "^8.1.4",
+    "gulp-typedoc": "^2.2.3",
+    "gulp-typescript": "^5.0.1",
+    "mocha": "^6.2.2",
+    "ts-node": "^8.5.4",
+    "tsify": "^4.0.1",
+    "tslint": "^5.20.1",
+    "typedoc": "^0.15.3",
+    "typescript": "^3.7.3",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "@types/node": "^12.12.14",
+    "mcl-wasm": "^0.3.7"
+  }
+}
